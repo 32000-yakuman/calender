@@ -1,0 +1,97 @@
+.cal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.8;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 20%);
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+}
+
+.cal_header {
+    background-color: #14b0eb;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.cal_arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+
+.cal_arrow::before {
+    content: "";
+    border: solid #ffffff;
+    border-width: 2px 2px 0 0;
+    width: 0.5em;
+    height: 0.5em;
+    display: block;
+}
+
+.cal_prev::before {
+    transform: rotate(-135deg);
+}
+
+.cal_next::before {
+    transform: rotate(45deg);
+}
+
+.cal_title {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cal_body table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.cal_body th,
+.cal_body td {
+    padding: 0.5em 1em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.cal_week {
+    color: #cccccc;
+}
+
+.cal_week--sat {
+    color: #006fd0;
+}
+
+.cal_week--sun {
+    color: #ff0f5b;
+}
+
+.cal_day {
+    color: #333333;
+}
+
+.cal_day--prev {
+    color: #eeeeee;
+}
+
+.cal_day--next {
+    color: #eeeeee;
+}
+
+.cal_day--sat {
+    color: #006fd0;
+}
+
+.cal_day--sun {
+    color: #ff0f5b;
+}
